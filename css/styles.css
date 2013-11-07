@@ -1,0 +1,78 @@
+body {
+  background-image: url(../img/candyhole.png);
+}
+
+#scoreboard-border {
+  border-width: 2px;
+  border-style: solid;
+}
+
+#scoreboard p {
+  margin-bottom: 0.25em;
+}
+
+.hiding {
+  display: none;
+}
+
+.selected {
+  border: 3px solid green;
+  border-radius: 24px;
+}
+
+.die {
+  width: 78px;
+  height: 79px;
+  display: inline-block;
+  background-image: url('../img/dice-white.svg');
+}
+
+.void {
+  background-position: -516px, -733px;
+}
+
+.one {
+  background-position: -42px -734px;
+}
+
+.two {
+  background-position: -121px -734px;
+}
+
+.three {
+  background-position: -201px -734px;
+}
+
+.four {
+  background-position: -279px -734px;
+}
+
+.five {
+  background-position: -358px -734px;
+}
+
+.six {
+  background-position: -437px -734px;
+}
+
+.not-turn {
+  color: green;
+}
+
+.is-turn {
+  color: red;
+}
+
+.active-player {
+  margin-top: 15px;
+}
+
+#instructions {
+  margin-top: 15px
+}
+
+.this-player {
+  font-size: 20px;
+  margin-bottom: 0.2em;
+}
+

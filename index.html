@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Yacht Dice</title>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/custom.modernizr.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<link href="css/foundation.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+  <body>
+  	<div class='row'>
+  		<div class="large-4 small-4 small-centered columns">
+  			<h1>Yacht Dice</h1>
+  		</div>
+  	</div>
+  	<div id="lead-paragraph" class='row'>
+  		<div class='large-10 small-10 small-offset-1 columns'>
+  			<p>This page let's you play Yacht Dice. It's similar to Yachtzee. Click see instructions to learn how to play. When you are ready to start the game, click play.</p>
+  		</div>
+  	</div>
+  	<div class='row'>
+  		<div class='small-offset-1 columns'>
+	  		<button id='play'>Play!</button>
+	  		<button id='see-instructions'>See Instructions</button>
+	  	</div>
+  	</div>
+  	<div id='scoreboard-border' class='row'></div>
+  	<div class='row'>
+	  	<div class="active-player hiding large-6 small-6 columns">
+	  	  <h4 class="player-information">
+	  	    Player <span id="current-player-number"></span>&nbsp&nbsp&nbsp&nbsp Round: <span id="current-turn">1</span>
+	  	  </h4>
+	  	  <div class="board">
+          <p id="reroll-instructions" class="hiding">Select dice to re-roll. You can reroll the dice <span id="rerolls-remaining"></span> more time<span id="reroll-plural">s</span>.</p>
+	  	    <div class="dice">
+	  	      <span id="die0" class="die void"></span>
+	  	      <span id="die1" class="die void"></span>
+	  	      <span id="die2" class="die void"></span>
+	  	      <span id="die3" class="die void"></span>
+	  	      <span id="die4" class="die void"></span>
+	  	    </div>
+	  	    <button id="roll-dice">Roll</button>
+          <button id="reroll-dice" class="hiding">Re-roll</button>
+	  	    <button id="end-turn">End Turn</button>
+	  	  </div>
+	  	</div>
+	  	<div id="instructions" class='large-6 small-6 columns hiding'>
+  			<div class='row'>
+  				<h4 class='large-8 small-8 columns'>Yacht Dice Instructions</h4>
+  				<h4 class='subheader'><a id='hide-instructions' class='large-4 small-4 columns'>Hide</a></h4>
+  			</div>
+	  		<p>Yacht is another dice game, similar to the popular game Yahtzee. Each player rolls five dice at a time and hopes for one of the following combinations:</p>
+	  		<ul>
+	  			<li>four of a kind, worth the sum of the four dice;</li>
+	  			<li>full house (three of a kind and a pair), worth 25;</li>
+	  			<li>straight (five sequential dice), worth 40; or</li>
+	  			<li>yacht (five of a kind), worth 50.</li>
+          <li>three of a kind, worth the sum of the three dice;</li>
+          <li>small straight (four sequential dice), worth 30 points.</li>
+	  		</ul>
+	  		<p>Any other combination is worth zero.</p>
+	  		<p>The game lasts for thirteen turns.</p>
+	  	</div>
+	  </div>
+  	<script>
+  		$(document).foundation();
+  	</script>
+	</body>
+</html>
